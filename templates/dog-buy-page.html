@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dog-buy-page.css') }}">
+</head>
+<body>
+    <h1>Dog Details</h1>
+    <div class="dog-container">
+        {% for dog in dogs %}
+<div class="dog-details">
+    {% if dog[0] %}
+    <img class="dog-image" src="{{ dog.Image }}" alt="{{ dog.Breed }} Image">
+    {% else %}
+    <p>No image available</p>
+    {% endif %}
+    <p><strong>Breed:</strong> {{ dog[1] }}</p>
+    <p><strong>Age:</strong> {{ dog[2] }}</p>
+    <p><strong>Height:</strong> {{ dog[3] }}</p>
+    <p><strong>Disease:</strong> {{ dog[4] }}</p>
+    <p><strong>Reason for Selling:</strong> {{ dog[5] }}</p>
+    <p><strong>Contact No:</strong> {{ dog[6] }}</p>
+    {% if dog[7] > 10000 %}
+    {% set adjusted_cost = dog[7] + 500 %}
+    <p><strong>Cost:</strong> {{ adjusted_cost }}</p>
+    {% else %}
+    {% set adjusted_cost = dog[7] + 1000 %}
+    <p><strong>Cost:</strong> {{ adjusted_cost }}</p>
+    {% endif %}
+</div>
+{% endfor %}
+
+    </div>
+</body>
+</html>

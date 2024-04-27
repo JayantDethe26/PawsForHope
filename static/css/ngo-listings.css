@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.ngo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ngo-details {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ngo-details p {
+    margin: 10px 0;
+}
+
+.ngo-details p strong {
+    font-weight: bold;
+}
+
+.ngo-details p:nth-child(odd) {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.ngo-details p:nth-child(even) {
+    color: #666;
+    background-color: #f5f5f5;
+}

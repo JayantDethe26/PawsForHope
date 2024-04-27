@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Selling Website - Logged In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/display.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Paws<span>ForHope</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="/dogs">Dogs</a></li>
+                <li><a href="/cats">Cats</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+            <div class="ngo-btn">
+                <a href="/showngos"><button>Connect to a NGO</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <div class="welcome-message">
+            <h2>Welcome,{{ session['Username'] }} !</h2>
+            <p>Explore our adorable pets available for adoption below.</p>
+        </div>
+    </section>
+
+    <section class="featured-pets">
+        <h2>Featured Pets</h2>
+        <div class="featured-pet-card">
+            <img src="{{ url_for('static', filename='/images/display-page/beagle.jpg') }}" alt="Pet 1">
+            <h3>Buddy</h3>
+            <p>Labrador Retriever | 3 years old</p>
+        </div>
+        <div class="featured-pet-card">
+            <img src="{{ url_for('static', filename='/images/display-page/exotic.jpg') }}" alt="Pet 2">
+            <h3>Luna</h3>
+            <p>Maine Coon | 2 years old</p>
+        </div>
+        <div class="featured-pet-card">
+            <img src="{{ url_for('static', filename='/images/display-page/cavalier-king-charles-spaniel.jpg') }}" alt="Pet 3">
+            <h3>Max</h3>
+            <p>Golden Retriever | 4 years old</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="{{ url_for('static', filename='/images/display-page/adopted_pet1.jpg') }}" alt="Pet Adoption Gallery Image">
+                <img src="{{ url_for('static', filename='/images/display-page/adopted_pet2.jpg') }}" alt="Pet Adoption Gallery Image">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="events">
+        <div class="container">
+            <h2>Events</h2>
+            <div class="event">
+                <h3>Adoption Fair</h3>
+                <p>Date: 10/05/2024</p>
+                <p>Location: Furry Friends Festival Grounds, Mumbai</p>
+                <p>Join us for our annual adoption fair featuring a variety of adorable pets in need of loving homes!</p>
+            </div>
+            <div class="event">
+                <h3>Charity Fundraiser</h3>
+                <p>Date: 23/05/2024</p>
+                <p>Location: Kindness Corner Hall, Bandra</p>
+                <p>Help support our mission by attending our charity fundraiser event. All proceeds will go towards caring for homeless pets.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>10 Tips for New Pet Owners</h3>
+                <p>Whether you're adopting a puppy or a senior cat, here are some essential tips to help you navigate the joys and challenges of pet ownership.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Success Story: Meet Bella</h3>
+                <p>Learn about Bella's journey from a shelter dog to a beloved family pet, and how she's changed the lives of her adoptive family.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 PawsForHope. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

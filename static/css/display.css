@@ -1,0 +1,240 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span{
+    color:  rgb(208, 165, 25);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+.ngo-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.ngo-btn button {
+    background-color: rgb(208, 165, 25);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ngo-btn button:hover {
+    background-color: rgb(208, 165, 25);
+}
+
+
+/* Welcome section styles */
+.welcome-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.welcome-message {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-message h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(208, 165, 25);
+}
+
+.welcome-message p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Featured pets section styles */
+.featured-pets {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-pet-card {
+    display: inline-block;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-pet-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-pet-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-pet-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(208, 165, 25);
+}
+
+.featured-pet-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Gallery section styles */
+#gallery {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Events section styles */
+#events {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.event {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(208, 165, 25);
+}
+
+.event p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Blog section styles */
+#blog {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:  rgb(208, 165, 25);
+}
+
+.blog-post p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.blog-post a {
+    color: rgb(208, 165, 25);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}

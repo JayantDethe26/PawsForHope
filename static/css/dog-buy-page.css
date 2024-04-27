@@ -1,0 +1,68 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Dog container styles */
+.dog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Dog details styles */
+.dog-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Dog image styles */
+.dog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Strong styles */
+strong {
+    color: #000;
+}
+
+/* Adjusted cost styles */
+.adjusted-cost {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* No image available styles */
+.no-image {
+    color: #f00;
+    font-style: italic;
+}

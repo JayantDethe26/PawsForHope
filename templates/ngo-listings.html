@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/ngo-listings.css') }}">
+</head>
+<body>
+    <h1>NGO Details</h1>
+    <div class="ngo-container">
+        {% for ngo in ngos %}
+        <div class="ngo-details">
+            <p><strong>NGO:</strong> {{ ngo[0] }}</p>
+            <p><strong>Email:</strong> {{ ngo[1] }}</p>
+            <p><strong>Website:</strong> {{ ngo[2] }}</p>
+            <p><strong>Location:</strong> {{ ngo[3] }}</p>
+            <p><strong>Call:</strong> {{ ngo[4] }}</p>
+            <p><strong>Mission:</strong> {{ ngo[5] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
